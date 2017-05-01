@@ -1,0 +1,16 @@
+{
+  "name": "AntiClickbait",
+  "description": "Remove clickbait titles",
+  "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "https://gateway.watsonplatform.net/*"
+
+  ],
+  "content_scripts":[{
+    "matches":["http://*/*",
+               "https://*/*"],
+    "js":["background.js"]
+  }],
+  "manifest_version": 2
+}
